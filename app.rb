@@ -5,3 +5,10 @@ get '/' do
   @sum = 1 + 1
   erb :index
 end
+
+post '/posted' do
+  @message = 'hello world'
+  @sum = 1 + 1
+  @name = params[:name]
+  erb :index
+end
